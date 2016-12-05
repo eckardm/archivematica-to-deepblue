@@ -33,8 +33,6 @@ for root, _, files in os.walk(staging_dir):
         # get agent
         mets_dir = os.path.join(aip_dir, "data", [name for name in os.listdir(os.path.join(aip_dir, "data")) if name.startswith("METS")][0])
 
-        print mets_dir
-
         tree = etree.parse(mets_dir)
         namespaces = {
             "premis": "info:lc/xmlns/premis-v2",
@@ -45,3 +43,9 @@ for root, _, files in os.walk(staging_dir):
         username = user.split(", ")[0].split('"')[1].split('"')[0]
         first_name = user.split(", ")[1].split('"')[1].split('"')[0]
         last_name = user.split(", ")[2].split('"')[1].split('"')[0]
+
+        # get dcterms
+        dcterms_title = tree.xpath(".//dc:title", namespaces=namespaces)[0].text
+        dcterms_creator =  tree.xpath(".//dc:creator", namespaces=namespaces)[0].text
+        dcterms_date = tree.xpath(".//dc:date", namespaces=namespaces)[0].text
+        dcterms_rights = tree.xpath(".//dc:rights", namespaces=namespaces)[0].text
