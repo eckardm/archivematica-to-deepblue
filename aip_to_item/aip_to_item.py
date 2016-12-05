@@ -49,3 +49,10 @@ for root, _, files in os.walk(staging_dir):
         dcterms_creator =  tree.xpath(".//dc:creator", namespaces=namespaces)[0].text
         dcterms_date = tree.xpath(".//dc:date", namespaces=namespaces)[0].text
         dcterms_rights = tree.xpath(".//dc:rights", namespaces=namespaces)[0].text
+
+        # get rights statement
+        act = tree.xpath(".//premis:act", namespaces=namespaces)[0].text
+        restriction = tree.xpath(".//premis:restriction", namespaces=namespaces)[0].text
+        start_date = tree.xpath(".//premis:startDate", namespaces=namespaces)[0].text
+        end_date = tree.xpath(".//premis:endDate", namespaces=namespaces)[0].text
+        rights_granted_note = tree.xpath(".//premis:rightsGrantedNote", namespaces=namespaces)[0].text
