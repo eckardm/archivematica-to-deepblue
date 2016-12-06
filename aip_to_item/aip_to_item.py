@@ -136,3 +136,23 @@ for root, _, files in os.walk(staging_dir):
 
         item_id = response.json().get("id")
         handle = response.json().get("handle")
+
+        # create metadata bitstream on deepblue item
+        url = dspace_url + "/RESTapi/items/" + str(item_id) + "/bitstreams"
+        with open(metadata_zip, mode="r") as f:
+            content = f.read()
+        response = requests.post(url, headers=headers, data=content)
+
+        bitstream_id = response.json().get("id")
+
+        url = dspace_url + "/RESTapi/bitstreams/" + str(bitstream_id)
+        response = requests.get(url)
+
+        bitstream = response.json()
+
+        params = {"expand": "policies"}
+        body = bitstream
+        body["name"] = "metadata.7z"
+        body["description"] = "Administrative information. Access restricted to Bentley staff"
+        body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]
+        response = requests.put(url, headers=headers, params=params, json=body)
