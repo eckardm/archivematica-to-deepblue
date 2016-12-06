@@ -2566,3 +2566,463 @@ JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.j
 [Child 27216] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
 [Child 27216] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
 [Child 27216] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481054203651	geckodriver	INFO	Listening on 127.0.0.1:50294
+1481054204654	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.UoQTyfDn03TN
+1481054204655	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481054204661	geckodriver::marionette	INFO	Connecting to Marionette on localhost:41218
+1481054205449	Marionette	INFO	Listening on port 41218
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: chrome://marionette/content/listener.js, line 999: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27442): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 27494] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+[Child 27494] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 27494] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481054242391	geckodriver	INFO	Listening on 127.0.0.1:48710
+1481054243392	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.pgupawzJ1S3L
+1481054243393	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481054243397	geckodriver::marionette	INFO	Connecting to Marionette on localhost:43791
+1481054244371	Marionette	INFO	Listening on port 43791
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27550): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+[Child 27601] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+[Child 27601] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+[Child 27601] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 27601] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481054317000	geckodriver	INFO	Listening on 127.0.0.1:38615
+1481054317999	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.LAxiyV7n46jh
+1481054318001	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481054318008	geckodriver::marionette	INFO	Connecting to Marionette on localhost:35803
+1481054318782	Marionette	INFO	Listening on port 35803
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:27662): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+[Child 27713] WARNING: pipe error: Broken pipe: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 684
+[Child 27713] WARNING: pipe error: Broken pipe: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 684
+[Child 27713] WARNING: pipe error: Broken pipe: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 684
+[Child 27713] WARNING: pipe error: Broken pipe: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 684
+[Child 27713] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 27713] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481057978289	geckodriver	INFO	Listening on 127.0.0.1:33576
+1481057979220	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.5IlGNCXC5ZJm
+1481057979221	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481057979245	geckodriver::marionette	INFO	Connecting to Marionette on localhost:46091
+1481057983100	Marionette	INFO	Listening on port 46091
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: chrome://marionette/content/listener.js, line 999: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2549): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+[Child 2611] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+[Child 2611] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 2611] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481058031369	geckodriver	INFO	Listening on 127.0.0.1:37803
+1481058032365	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.dVg9zzMYjBC1
+1481058032367	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481058032375	geckodriver::marionette	INFO	Connecting to Marionette on localhost:37499
+1481058033001	Marionette	INFO	Listening on port 37499
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2673): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+[Child 2732] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 2732] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+1481058105876	geckodriver	INFO	Listening on 127.0.0.1:40334
+1481058106873	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.txLZm83Y566H
+1481058106873	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481058106876	geckodriver::marionette	INFO	Connecting to Marionette on localhost:40933
+1481058107669	Marionette	INFO	Listening on port 40933
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2791): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+[Child 2842] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 2842] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+1481058154178	geckodriver	INFO	Listening on 127.0.0.1:38440
+1481058155180	mozprofile::profile	INFO	Using profile path /tmp/rust_mozprofile.lJnlLODQ8OsW
+1481058155181	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox
+1481058155184	geckodriver::marionette	INFO	Connecting to Marionette on localhost:38482
+1481058155913	Marionette	INFO	Listening on port 38482
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+
+(firefox:2918): GLib-GObject-CRITICAL **: g_type_add_interface_static: assertion 'g_type_parent (interface_type) == G_TYPE_INTERFACE' failed
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/static/js/editPolicyForm.js, line 9: TypeError: $(...).datepicker is not a function
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 257: TypeError: txtContent is null
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/jquery-ui-1.8.15.custom.min.js, line 18: ReferenceError: jQuery is not defined
+JavaScript error: https://dev.deepblue.lib.umich.edu/themes/Mirage/lib/js/more.js, line 29: ReferenceError: $ is not defined
+[Child 2971] WARNING: pipe error (18): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x1060003,name=PTexture::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x420003,name=PCompositable::Msg_Destroy) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x9C0001,name=PLayer::Msg___delete__) Channel error: cannot send/recv
+
+
+###!!! [Child][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+
+[Child 2971] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 320
+[Child 2971] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056
+[Child 2971] ###!!! ABORT: Aborting on channel error.: file /build/firefox-GoqHGf/firefox-50.0.2+build1/ipc/glue/MessageChannel.cpp, line 2056

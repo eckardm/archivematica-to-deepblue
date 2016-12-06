@@ -6,6 +6,7 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from slacker import Slacker
 
 
 # `\media\sf_DeepBlue` is auto-mounted
@@ -192,7 +193,6 @@ for root, _, files in os.walk(staging_dir):
             body["description"] = "Archival materials. Access restricted to Bentley staff."
             body["policies"] = [{"action":"READ", "groupId": "1335", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
 
-            # TO-DO: restrict deepblue item
             driver = webdriver.Firefox(executable_path="/home/eckardm/archivematica-to-deepblue/aip_to_item/geckodriver")
 
             driver.get(dspace_url + "/handle/" + item_handle)
@@ -259,3 +259,20 @@ for root, _, files in os.walk(staging_dir):
             driver.quit()
 
         response = requests.put(url, headers=headers, params=params, json=body)
+
+        # notify archivist
+        from auth import slack_token
+
+        slack = Slacker(slack_token)
+
+        if username == "dproud":
+            slack.chat.post_message(
+                "#digital-processing",
+                str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue: https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " :cavaliers: :partyparrot:"),
+            )
+        else:
+            slack.chat.post_message(
+                "#digital-processing",
+                str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue: https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " :bananadance: :partyparrot:"),
+            )
+
