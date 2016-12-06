@@ -110,8 +110,10 @@ for root, _, files in os.walk(staging_dir):
         # create a deepblue item
         dspace_url = "https://dev.deepblue.lib.umich.edu"
 
+        from auth import dspace_email, dspace_password
+
         url = dspace_url + "/RESTapi/login"
-        body = {"email": "eckardm@umich.edu", "password": "m1deposit"}
+        body = {"email": dspace_email, "password": dspace_password}
         response = requests.post(url, json=body)
 
         dspace_token = response.text
@@ -153,6 +155,40 @@ for root, _, files in os.walk(staging_dir):
         params = {"expand": "policies"}
         body = bitstream
         body["name"] = "metadata.7z"
-        body["description"] = "Administrative information. Access restricted to Bentley staff"
-        body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]
+        body["description"] = "Administrative information. Access restricted to Bentley staff."
+        body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+        response = requests.put(url, headers=headers, params=params, json=body)
+
+        # create objects bitstream on deepblue item
+        url = dspace_url + "/RESTapi/items/" + str(item_id) + "/bitstreams"
+        with open(objects_zip, mode="r") as f:
+            content = f.read()
+        response = requests.post(url, headers=headers, data=content)
+
+        bitstream_id = response.json().get("id")
+
+        url = dspace_url + "/RESTapi/bitstreams/" + str(bitstream_id)
+        response = requests.get(url)
+
+        bitstream = response.json()
+
+        params = {"expand": "policies"}
+        body = bitstream
+        body["name"] = "objects.7z"
+
+        if rights_granted_note.startswith("Reading-Room Only"):
+            body["description"] = "Archival materials. Access restricted to Bentley Reading Room."
+            body["policies"] = [{"action":"READ", "groupId": "1002", "rpType": "TYPE_CUSTOM"}]  # Bentley Only Users
+        elif rights_granted_note.startswith("UM Only"):
+            body["description"] = "Archival materials. Access restricted to UM users."
+            body["policies"] = [{"action":"READ", "groupId": "80", "rpType": "TYPE_CUSTOM"}]  # UM Users
+        elif rights_granted_note.startswith("Streaming Only"):
+            body["description"] = "Archival materials. Access restricted to Bentley staff."
+            body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+        elif restriction == "Disallow":
+            body["description"] = "Archival materials. Access restricted to Bentley staff."
+            body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+
+            # TO-DO: restrict deepblue item
+
         response = requests.put(url, headers=headers, params=params, json=body)
