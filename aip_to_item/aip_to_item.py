@@ -56,3 +56,52 @@ for root, _, files in os.walk(staging_dir):
         start_date = tree.xpath(".//premis:startDate", namespaces=namespaces)[0].text
         end_date = tree.xpath(".//premis:endDate", namespaces=namespaces)[0].text
         rights_granted_note = tree.xpath(".//premis:rightsGrantedNote", namespaces=namespaces)[0].text
+
+        # repackage aips
+        objects_dir = os.path.join(aip_dir, "data", "objects", [name for name in os.listdir(os.path.join(aip_dir, "data", "objects")) if name.startswith("digital_object_component")][0])
+        objects_zip = os.path.join(aip_dir, "objects.7z")
+        command = [
+            "7z", "a",  # add
+            "-bd",  # disable percentage indicator
+            "-t7z",  # type of archive
+            "-y",  # assume yes on all queries
+            "-m0=bzip2",  # compression method
+            "-mtc=on", "-mtm=on", "-mta=on",  # keep timestamps (create, mod, access)
+            "-mmt=on",  # multithreaded
+            objects_zip,  # destination
+            objects_dir,  # source
+        ]
+        subprocess.call(command)
+
+        shutil.rmtree(objects_dir)
+
+        metadata_zip = os.path.join(aip_dir, "metadata.7z")
+        command = [
+            "7z", "a",  # add
+            "-bd",  # disable percentage indicator
+            "-t7z",  # type of archive
+            "-y",  # assume yes on all queries
+            "-m0=bzip2",  # compression method
+            "-mtc=on", "-mtm=on", "-mta=on",  # keep timestamps (create, mod, access)
+            "-mmt=on",  # multithreaded
+            metadata_zip,  # destination
+            aip_dir,  # source
+        ]
+        subprocess.call(command)
+        command = [
+            "7z", "d",  # delete
+            metadata_zip,  # archive
+            "objects.7z",  # file
+            "-r"  # recurse
+        ]
+        subprocess.call(command)
+
+        shutil.rmtree(os.path.join(aip_dir, "data"))
+        tags = [
+            os.path.join(aip_dir, "bag-info.txt"),
+            os.path.join(aip_dir, "bagit.txt"),
+            os.path.join(aip_dir, "manifest-sha256.txt"),
+            os.path.join(aip_dir, "tagmanifest-md5.txt"),
+        ]
+        for tag in tags:
+            os.remove(tag)
