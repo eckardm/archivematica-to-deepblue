@@ -3,6 +3,10 @@ import shutil
 import subprocess
 from lxml import etree
 import requests
+from selenium import webdriver
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+
 
 # `\media\sf_DeepBlue` is auto-mounted
 staging_dir = os.path.join(os.path.sep, "media", "sf_DeepBlue", "deepblue_saf_staging")
@@ -137,7 +141,7 @@ for root, _, files in os.walk(staging_dir):
         response = requests.post(url, headers=headers, params=params, json=body)
 
         item_id = response.json().get("id")
-        handle = response.json().get("handle")
+        item_handle = response.json().get("handle")
 
         # create metadata bitstream on deepblue item
         url = dspace_url + "/RESTapi/items/" + str(item_id) + "/bitstreams"
@@ -156,7 +160,7 @@ for root, _, files in os.walk(staging_dir):
         body = bitstream
         body["name"] = "metadata.7z"
         body["description"] = "Administrative information. Access restricted to Bentley staff."
-        body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+        body["policies"] = [{"action":"READ", "groupId": "1335", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
         response = requests.put(url, headers=headers, params=params, json=body)
 
         # create objects bitstream on deepblue item
@@ -172,7 +176,6 @@ for root, _, files in os.walk(staging_dir):
 
         bitstream = response.json()
 
-        params = {"expand": "policies"}
         body = bitstream
         body["name"] = "objects.7z"
 
@@ -184,11 +187,75 @@ for root, _, files in os.walk(staging_dir):
             body["policies"] = [{"action":"READ", "groupId": "80", "rpType": "TYPE_CUSTOM"}]  # UM Users
         elif rights_granted_note.startswith("Streaming Only"):
             body["description"] = "Archival materials. Access restricted to Bentley staff."
-            body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+            body["policies"] = [{"action":"READ", "groupId": "1335", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
         elif restriction == "Disallow":
             body["description"] = "Archival materials. Access restricted to Bentley staff."
-            body["policies"] = [{"action":"READ", "groupId": "1334", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
+            body["policies"] = [{"action":"READ", "groupId": "1335", "rpType": "TYPE_CUSTOM"}]  # BentleyStaff
 
             # TO-DO: restrict deepblue item
+            driver = webdriver.Firefox(executable_path="/home/eckardm/archivematica-to-deepblue/aip_to_item/geckodriver")
+
+            driver.get(dspace_url + "/handle/" + item_handle)
+
+            wait = WebDriverWait(driver, 10)
+            wait.until(EC.title_is(dcterms_title))
+            driver.find_element_by_link_text("Login").click()
+
+            from auth import umich_uniqname, umich_password
+
+            wait.until(EC.title_is("U-M Weblogin"))
+            driver.find_element_by_id("login").send_keys(umich_uniqname)
+            driver.find_element_by_id("password").send_keys(umich_password)
+            driver.find_element_by_id("loginSubmit").click()
+
+            wait.until(EC.title_is("Deep Blue: Deposits & Workflow"))
+            driver.get(dspace_url + "/handle/" + item_handle)
+
+            wait.until(EC.title_is(dcterms_title))
+            driver.find_element_by_link_text("Edit this item").click()
+
+            wait.until(EC.title_is("Deep Blue: Item Status"))
+            try:
+                driver.find_element_by_id("aspect_administrative_item_EditItemStatusForm_field_submit_authorization").click()
+
+                wait.until(EC.title_is("Deep Blue: Edit Item's Policies"))
+            except:
+                print "retrying..."
+                driver.find_element_by_id("aspect_administrative_item_EditItemStatusForm_field_submit_authorization").click()
+
+                wait.until(EC.title_is("Deep Blue: Edit Item's Policies"))
+            try:
+                driver.find_element_by_css_selector("tr.ds-table-row:nth-child(3) > td:nth-child(2) > a:nth-child(1)").click()
+
+                wait.until(EC.title_is("Deep Blue: Edit Policy"))
+            except:
+                print "retrying..."
+                driver.find_element_by_css_selector("tr.ds-table-row:nth-child(3) > td:nth-child(2) > a:nth-child(1)").click()
+
+                wait.until(EC.title_is("Deep Blue: Edit Policy"))
+            [option for option in driver.find_elements_by_tag_name("option") if option.text == "BentleyStaff"][0].click()  # BentleyStaff
+            driver.find_element_by_id("aspect_administrative_authorization_EditPolicyForm_field_submit_save").click()
+
+            wait.until(EC.title_is("Deep Blue: Edit Item's Policies"))
+            try:
+                driver.find_element_by_id("aspect_administrative_authorization_EditItemPolicies_field_submit_return").click()
+
+                wait.until(EC.title_is("Deep Blue: Item Status"))
+            except:
+                print "retrying..."
+                driver.find_element_by_id("aspect_administrative_authorization_EditItemPolicies_field_submit_return").click()
+
+                wait.until(EC.title_is("Deep Blue: Item Status"))
+            try:
+                driver.find_element_by_id("aspect_administrative_item_EditItemStatusForm_field_submit_return").click()
+
+                wait.until(EC.title_is(dcterms_title))
+            except:
+                print "retrying..."
+                driver.find_element_by_id("aspect_administrative_item_EditItemStatusForm_field_submit_return").click()
+
+                wait.until(EC.title_is(dcterms_title))
+
+            driver.quit()
 
         response = requests.put(url, headers=headers, params=params, json=body)
