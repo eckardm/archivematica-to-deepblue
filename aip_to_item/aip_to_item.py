@@ -2,6 +2,7 @@ import os
 import shutil
 import subprocess
 from lxml import etree
+import requests
 
 # `\media\sf_DeepBlue` is auto-mounted
 staging_dir = os.path.join(os.path.sep, "media", "sf_DeepBlue", "deepblue_saf_staging")
@@ -105,3 +106,33 @@ for root, _, files in os.walk(staging_dir):
         ]
         for tag in tags:
             os.remove(tag)
+
+        # create a deepblue item
+        dspace_url = "https://dev.deepblue.lib.umich.edu"
+
+        url = dspace_url + "/RESTapi/login"
+        body = {"email": "eckardm@umich.edu", "password": "m1deposit"}
+        response = requests.post(url, json=body)
+
+        dspace_token = response.text
+
+        collection_id = 1412
+
+        url = dspace_url + "/RESTapi/collections/" + str(collection_id) + "/items"
+        headers = {
+            "Accept": "application/json",
+            "rest-dspace-token": dspace_token
+        }
+        params = {"expand": "metadata"}
+        body = {
+            "metadata" : [
+                {"key": "dc.title", "value": dcterms_title, "language": None},
+                {"key": "dc.contributor.author", "value": dcterms_creator, "language": None},
+                {"key": "dc.date.issued", "value": dcterms_date, "language": None},
+                {"key": "dc.rights.copyright", "value": dcterms_rights, "language": None}
+            ]
+        }
+        response = requests.post(url, headers=headers, params=params, json=body)
+
+        item_id = response.json().get("id")
+        handle = response.json().get("handle")
