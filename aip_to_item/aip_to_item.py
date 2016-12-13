@@ -279,6 +279,5 @@ def aip_to_item():
                 )
 
 if __name__ == "__main__":
-    get_eligible_digital_objects()
+    get_eligible_digital_objects.get_eligible_digital_objects()
     aip_to_item()
-    
