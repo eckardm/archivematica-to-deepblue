@@ -6,6 +6,7 @@ import requests
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import json
 from slacker import Slacker
 
 import get_eligible_digital_objects
@@ -115,9 +116,7 @@ def aip_to_item():
                 os.remove(tag)
 
             # create a deepblue item
-            dspace_url = "https://dev.deepblue.lib.umich.edu"
-
-            from auth import dspace_email, dspace_password
+            from auth import dspace_url, dspace_email, dspace_password
 
             url = dspace_url + "/RESTapi/login"
             body = {"email": dspace_email, "password": dspace_password}
@@ -262,6 +261,35 @@ def aip_to_item():
 
             response = requests.put(url, headers=headers, params=params, json=body)
 
+            # update archivesspace digital object
+            with open("eligible_digital_objects.json", mode="r") as f:
+                eligible_digital_objects = json.load(f)
+
+            for eligible_digital_object in eligible_digital_objects:
+                if eligible_digital_object.get("title") == dcterms_title:
+
+                    from auth import archivesspace_url, archivesspace_username, archivesspace_password
+                    url = archivesspace_url + "/users/" + archivesspace_username + "/login?password=" + archivesspace_password
+                    response = requests.post(url)
+
+                    archivesspace_token = response.json().get("session")
+
+                    url = archivesspace_url + eligible_digital_object.get("uri")
+                    headers = {"X-ArchivesSpace-Session": archivesspace_token}
+                    response = requests.get(url, headers=headers)
+
+                    body = response.json()
+                    file_version = {
+                        "file_uri": "http://hdl.handle.net/" + item_handle,
+                        "xlink_actuate_attribute": "onRequest",
+                        "xlink_show_attribute": "new"
+                    }
+                    body["file_versions"].append(file_version)
+
+                    response = requests.post(url, headers=headers, json=body)
+
+                    break
+
             # notify archivist
             from auth import slack_token
 
@@ -270,12 +298,12 @@ def aip_to_item():
             if username == "dproud":
                 slack.chat.post_message(
                     "#digital-processing",
-                    str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue: https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " :cavaliers: :partyparrot:"),
+                    str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue at https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " and the ArchivesSpace digital object has been updated as well at " + "http://131.211.39.87:8080/" + eligible_digital_object.get("uri").split("/")[-1] + " :cavaliers: :partyparrot:"),
                 )
             else:
                 slack.chat.post_message(
                     "#digital-processing",
-                    str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue: https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " :bananadance: :partyparrot:"),
+                    str("@" + username + ' "' + dcterms_title + '" has been deposited to DeepBlue at https://dev.deepblue.lib.umich.edu/handle/' + item_handle + " and the ArchivesSpace digital object has been updated as well at " + "http://131.211.39.87:8080/" + eligible_digital_object.get("uri").split("/")[-1] + " :bananadance: :partyparrot:"),
                 )
 
 if __name__ == "__main__":
